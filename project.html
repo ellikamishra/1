@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+
+    background-image: url("backg.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;  
+}
+
+header{
+ margin: 200px  200px 200px 200px;   
+background-color: black;
+backface-visibility: visible;
+width: 1300px;
+height: 400px;
+ color: blanchedalmond;
+ background-clip:padding-box;
+ display: flexbox;
+ flex-direction: row;
+ font-size: 30px;
+ text-align: center; 
+}
+section{
+  display: flex;
+  flex-direction: column;
+  margin: 300px 300px 300px 300px;
+  align-content: center;
+}
+/* .rose{
+background-image:url("Rose.jpg");
+background-repeat:no-repeat;
+background-size: 100%;
+background-position: center;
+}
+.flag{
+  background-image:url("flag.webp");
+background-repeat:no-repeat;
+background-size: 100%;
+background-position: center;
+
+}
+.home{
+  background-image:url("nostalgic.jpg");
+background-repeat:no-repeat;
+background-size: 100%;
+background-position: center;
+
+} */
+section div{
+  background-color:transparent;
+  backface-visibility:unset;
+  margin: 150px;
+  padding-right: 50px;
+ 
+  align-self: center;
+  text-align: center;
+  width: 700px;
+  height: 300px;
+}
+
+div{
+    background-color: aqua;
+    align-content: center;
+    width: 150px;
+    height: 100px;
+    
+    
+}
+footer{
+    text-align: center;
+    display: flexbox;
+    flex-direction: row;
+    margin: 5000px 200px 200px 200px ;
+    color: blanchedalmond;
+    background-color: black;
+    /* padding-left: 200px;
+    padding-right: 200px; */
+   
+}
+
+</style>
+
+<body >
+    <header>
+
+       <br> Ajita Tewari</br>
+    <br> HI there! I'm Ajita and I love writing.It brings me so much calm and peace.</br>
+    <br> This site is a collection of all my writings:-Poems,songs,quotes,Thoughts and everything I pen down that strikes my mind! 
+     <br>I write in Hindi,Urdu and a mix of these and other new/old forms of Hindi.
+     <br></br>If you too love composing you are at the right place!
+     Checkout my work and feel free to share your ideas,writings and any suggestions.
+     <br></br>
+     Most of my compositions are about Romance or Patriotism or Nostalgia(childhood memories you know),so check these out 
+     and share them with people fond of writing.<br></br>Have a great day!
+    </header>
+    <section>
+
+     <div>
+    
+        <figure >
+            <a href="rom.html"><img src="Rose.jpg" alt="rose" style="height: 100%;width: 100%;">
+    <figcaption style="font-family: Georgia, 'Times New Roman', Times, serif;color: black;text-emphasis: bold;font-size: 40px;">Romance</figcaption>
+            </figure>
+          </div >
+   <div>
+     <figure >
+      <a href="pat.html"><img src="flag.webp" alt="rose" style="height: 100%;width: 100%;">
+      <figcaption style="font-family: Georgia, 'Times New Roman', Times, serif;color: black;text-emphasis: bold;font-size: 40px;"> Patriotism</figcaption>
+      </figure>
+       
+   
+    </div>
+    <div >
+    <figure >
+      <a href="nos.html"><img src="nostalgic.jpg" alt="rose" style="height: 100%;width: 100%;">
+      <figcaption style="font-family: Georgia, 'Times New Roman', Times, serif;color: black;text-emphasis: bold;font-size: 40px;">Nostal
+        gia</figcaption>
+      </figure>
+        
+    </div>
+</section>
+<footer>Thank you!</footer>
+
+<script>
+function myfun()
+{ val=document.getElementById().classList.toggle(show);
+}
+window.onmouseover()=function(event)
+{ 
+    if(!event.target.matches(".rose"||".flag"||".home"))
+    var dropdowns=document.getElementsByClassName();
+  if(dropdowns =='rose')
+  { var i;
+      for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        
+        openDropdown.classList.remove('show');
+      }
+    } 
+}
+
+else if(dropdowns=='flag')
+{ var i;
+      for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    } 
+}
+else if(dropdowns=='home')
+{ var i;
+      for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    } 
+} 
+}
+</script>
+</body>
+</html>
+
