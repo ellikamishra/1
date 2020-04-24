@@ -1,8 +1,58 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+}
+
+.top-nav-collapse {
+  background-color:currentColor !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background:currentColor !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
-    
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.example {
+  -ms-overflow-style: none;
+}
     @include media-breakpoint-up(sm) {
     html {
     font-size: 1.8rem;
@@ -65,3 +115,24 @@ html, body {
    margin-left: 25%;
    
   }
+
+  @media (min-width: 768px) {
+    .media .avatar-2 {
+        width: 130px;
+    }
+}
+
+@media (max-width: 767px) {
+    .media .avatar-2 {
+        width: 160px;
+    }
+}
+
+.card img.rounded-circle {
+    border-radius: 50%;
+}
+
+#navi{
+ size: 2%;
+
+}
